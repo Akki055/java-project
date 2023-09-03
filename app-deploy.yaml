@@ -17,7 +17,7 @@ spec:
 #       kubernetes.io/os: linux
       containers:
       - name: java-app
-        image: salilkul87/myjava-image:test
+        image: akki058/myjava-image:test
         ports:
         - containerPort: 80
           protocol: TCP
