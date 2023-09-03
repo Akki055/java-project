@@ -36,7 +36,7 @@ pipeline {
           }
       stage('Deploy app') {
          steps {
-            sh 'kubectl apply -f app-deploy.yaml'
+            sh 'sodo kubectl apply -f app-deploy.yaml'
          }
       }
     }
