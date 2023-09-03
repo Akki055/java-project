@@ -29,8 +29,8 @@ pipeline {
            steps {
                  withCredentials([usernamePassword(credentialsId: '6c94d090-dc88-4929-a8dd-3e95697846f2', passwordVariable: 'Password', usernameVariable: 'Username')]) {
                  sh "sudo docker login -u ${env.Username} -p ${env.Password}"
-                 sh "sudo docker image tag myjava-image akki055/myjava-image:test"
-                 sh "sudo docker image push akki055/myjava-image:test" 
+                 sh "sudo docker image tag myjava-image akki058/myjava-image:test"
+                 sh "sudo docker image push akki058/myjava-image:test" 
                } 
              }  
           }
